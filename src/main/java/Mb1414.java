@@ -13,14 +13,22 @@ public class Mb1414 extends LiaisonSerie {
 
 
    }
+
+   @Override
+   public void serialEvent(SerialPortEvent event) {
+      super.serialEvent(event);
+   }
+
    public void initialisationCapteur(){
-      serialPort.
+      serialPort.addEventListener(serialPortEvent -> );
 
    }
 
+   public double getDistance() {
+      return distance;
+   }
 
-
-
-
-
+   public void setDistance(double distance) {
+      this.distance = distance;
+   }
 }
