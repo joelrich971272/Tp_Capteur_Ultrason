@@ -1,4 +1,3 @@
-import jssc.SerialPort;
 import jssc.SerialPortEvent;
 import jssc.SerialPortException;
 
@@ -19,8 +18,8 @@ public class Mb1414 extends LiaisonSerie {
       super.serialEvent(event);
    }
 
-   public void initialisationCapteur(){
-      serialPort.addEventListener(serialPortEvent -> );
+   public void initialisationCapteur() throws SerialPortException {
+      serialPort.addEventListener(serialPortEvent ->);
 
    }
 
